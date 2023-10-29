@@ -151,11 +151,17 @@ hr {
 }
 .new-cards h3 {
     font-size: 20px;
-    margin: 10px 0;
+    margin: 10px 0;    
 }
 .new-cardss h3 {
     font-size: 20px;
     margin: 10px 0;
+    text-align: center;
+}
+.new-cardss h4{
+    text-align: center;
+    color: #ef3353;
+    font-size: 30px;
 }
 .new-cards p {
     text-align: justify;
@@ -163,7 +169,7 @@ hr {
 }
 .new-cardss p {
     text-align: justify;
-    font-size: 15px;
+    font-size: 12px;
 }
 .new-cards a {
     padding: 10px 0;
@@ -192,7 +198,7 @@ hr {
 .cards-banner-one {
     width: 100%;
     height: 350px;
-    background: url('./img/tech-red.jpg');
+    background: url('./img/tech-red.jpg')no-repeat center center/cover;
     margin-bottom: 40px;
 }
 
@@ -217,7 +223,7 @@ hr {
 
 .cards-banner-two .content {
     width: 50%;
-    padding: 100px 0 0 30px;
+    padding: 50px 0 0 30px;
 }
 
 /*Social*/
@@ -250,7 +256,7 @@ hr {
 
 .footer-links {
     background: #2f3640;
-    color: #616161;
+    color: #723e4e;
     font-size: 12px;
     padding: 25px 0;
 }
@@ -270,10 +276,13 @@ hr {
 .footer-container ul li {
     line-height: 2.6;
 }
-
+.footer-container ul li a{
+    line-height: 2.6;
+    color: #e4d8d8;
+}
 .footer {
     background: #2f3640;
-    color: #616161;
+    color: #ef3353;
     font-size: 12px;
     padding: 20px 0;
     text-align: center;
@@ -321,7 +330,16 @@ hr {
     }
     .cards-banner-one .content, 
     .cards-banner-two .content{
+        padding: 20px 20px;
         width: 80%;
+    }
+    .cards-banner-one p,
+    .cards-banner-one h2{
+        font-size: 20px;
+    }
+    .cards-banner-two p,
+    .cards-banner-two h2{
+        font-size: 20px;
     }
 
     .footer-links .footer-container{
@@ -338,24 +356,21 @@ hr {
     }
     .new-cardss{
         grid-template-columns: 1fr;
-        margin: 260px 0 0 0;
     }
     
     .cards-banner-one .content,
     .cards-banner-two .content{
         width: 100%;
-        background: url('img/a.jpg') no-repeat center center/cover;
         margin-bottom: 200px;
-        padding: 60px 20px;
+        padding: 20px 20px;
     }
-    .cards-banner-two .content{
-        width: 100%;
-        background: url('img/a.jpg') no-repeat center center/cover;
-        margin-bottom: 200px;
-        padding: 60px 20px;
+    .cards-banner-one p,
+    .cards-banner-one h2{
+        font-size: 15px;
     }
-    .social {
-        margin: 100px;
+    .cards-banner-two p,
+    .cards-banner-two h2{
+        font-size: 15px;
     }
     .footer-links .footer-container {
         grid-template-columns: 1fr;

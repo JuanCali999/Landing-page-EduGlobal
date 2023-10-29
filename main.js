@@ -9,3 +9,17 @@ ScrollReveal().reveal('.showcase', {delay: 500 });
 ScrollReveal().reveal('.new-cards', {delay: 500 });
 ScrollReveal().reveal('.cards-banner-one', {delay: 500 });
 ScrollReveal().reveal('.cards-banner-two', {delay: 500 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth',
+          block: 'center' // Cambiamos esto de 'center' a 'start'
+        });
+      });
+    });
+  });
+  
